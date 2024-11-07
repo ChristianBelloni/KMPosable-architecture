@@ -105,15 +105,4 @@ publishing {
             }
         }
     }
-
-    repositories {
-        maven {
-            name = "github"
-            url = uri("https://maven.pkg.github.com/sveltema/KMPosable-architecture")
-            credentials {
-                username = project.extra.get("GITHUB_ACTOR") as String?
-                password = project.extra.get("GITHUB_TOKEN") as String?
-            }
-        }
-    }
 }
